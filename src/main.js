@@ -113,7 +113,7 @@ const layersSetup = (layersOrder) => {
 const saveImage = (_editionCount) => {
   fs.writeFileSync(
     `${buildDir}/images/${_editionCount}.png`,
-    canvas.toBuffer("image/png")
+    canvas.toBuffer("image/png", {resolution: 300})
   );
 };
 
@@ -430,3 +430,28 @@ const startCreating = async () => {
 };
 
 module.exports = { startCreating, buildSetup, getElements };
+
+// pls make me rich
+/** 
+.--..--..--..--..--..--.
+.' \  (`._   (_)     _   \
+.'    |  '._)         (_)  |
+\ _.')\      .----..---.   /
+|(_.'  |    /    .-\-.  \  |
+\     0|    |   ( O| O) | o|
+|  _  |  .--.____.'._.-.  |
+\ (_) | o         -` .-`  |
+|    \   |`-._ _ _ _ _\ /
+\    |   |  `. |_||_|   |
+| o  |    \_      \     |     -.   .-.
+|.-.  \     `--..-'   O |     `.`-' .'
+_.'  .' |     `-.-'      /-.__   ' .-'
+.' `-.` '.|='=.='=.='=.='=|._/_ `-'.'
+`-._  `.  |________/\_____|    `-.'
+.'   ).| '=' '='\/ '=' |
+`._.`  '---------------'
+       //___\   //___\
+         ||       ||
+mon      ||_.-.   ||_.-.
+        (_.--__) (_.--__)
+*/

@@ -24,7 +24,7 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 20,
     layersOrder: [
       { name: "Background" },
       { name: "Background Props" },
@@ -44,8 +44,8 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 2500, // change canvas size
+  height: 2500,
   smoothing: false,
 };
 
@@ -82,7 +82,7 @@ const background = {
 
 const extraMetadata = {};
 
-const rarityDelimiter = "#";
+const rarityDelimiter = "#"; //rarity shiet ig
 
 const uniqueDnaTorrance = 10000;
 
