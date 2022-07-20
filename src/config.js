@@ -26,20 +26,34 @@ const layerConfigurations = [
   {
     growEditionSizeTo: 50,
     layersOrder: [
-      { name: "Background" },
-      { name: "Background Props" },
-      { name: "Body" },
-      { name: "Clothing" },
-      { name: "Eyes" },
-      { name: "Face Design" },
-      { name: "Hair" },
-      { name: "Head Accessories" },
-      { name: "Mouth" },
+      { Background: "Background" },
+      { BackgroundProps: "Background Props" },
+      { Skin: "Body" },
+      { Clothing: "Clothing" },
+      { Eyes: "Eyes" },
+      { FaceMarks: "Face Design" },
+      { Hair: "Hair" },
+      { Accessories: "Head Accessories" },
+      { Mouth: "Mouth" },
+    ],
+  },{
+    growEditionSizeTo: 100,
+    layersOrder: [
+      { Background: "Background" },
+      { BackgroundProps: "Background Props" },
+      { Skin: "Body" },
+      { Clothing: "Clothing" },
+      { Eyes: "Eyes" },
+      { FaceMarks: "Face Design" },
+      { Hair: "Hair" },
+      { Accessories: "Head Accessories" },
+      { Mouth: "Mouth" },
     ],
   },
+
 ];
 
-const shuffleLayerConfigurations = false;
+const shuffleLayerConfigurations = true;
 
 const debugLogs = false;
 
