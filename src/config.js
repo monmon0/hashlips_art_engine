@@ -24,7 +24,7 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 25,
+    growEditionSizeTo: 100,
     layersOrder: [
       { name: "Background" },
       { name: "Special Props" },
@@ -32,12 +32,12 @@ const layerConfigurations = [
       { name: "Special Clothes" },
       { name: "Eyes" },
       { name: "Face Design" },
-      { name: "Hair" },
-      { name: "Head Accessories" },
+      { name: "Warm Hair" },
+      { name: "Special Accessories" },
       { name: "Mouth" },
     ],
   },{
-    growEditionSizeTo: 50,
+    growEditionSizeTo: 200,
     layersOrder: [
       { name: "Background" },
       { name: "Background Props" },
@@ -45,7 +45,7 @@ const layerConfigurations = [
       { name: "Clothing" },
       { name: "Eyes" },
       { name: "Face Design" },
-      { name: "Hair" },
+      { name: "Cold Hair" },
       { name: "Head Accessories" },
       { name: "Mouth" },
     ],
@@ -58,8 +58,8 @@ const shuffleLayerConfigurations = true;
 const debugLogs = false;
 
 const format = {
-  width: 2500, // change canvas size
-  height: 2500,
+  width: 3000, // change canvas size
+  height: 3000,
   smoothing: false,
 };
 
