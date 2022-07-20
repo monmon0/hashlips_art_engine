@@ -24,33 +24,33 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 50,
+    growEditionSizeTo: 25,
     layersOrder: [
-      { Background: "Background" },
-      { BackgroundProps: "Background Props" },
-      { Skin: "Body" },
-      { Clothing: "Clothing" },
-      { Eyes: "Eyes" },
-      { FaceMarks: "Face Design" },
-      { Hair: "Hair" },
-      { Accessories: "Head Accessories" },
-      { Mouth: "Mouth" },
+      { name: "Background" },
+      { name: "Special Props" },
+      { name: "Body" },
+      { name: "Special Clothes" },
+      { name: "Eyes" },
+      { name: "Face Design" },
+      { name: "Hair" },
+      { name: "Head Accessories" },
+      { name: "Mouth" },
     ],
   },{
-    growEditionSizeTo: 100,
+    growEditionSizeTo: 50,
     layersOrder: [
-      { Background: "Background" },
-      { BackgroundProps: "Background Props" },
-      { Skin: "Body" },
-      { Clothing: "Clothing" },
-      { Eyes: "Eyes" },
-      { FaceMarks: "Face Design" },
-      { Hair: "Hair" },
-      { Accessories: "Head Accessories" },
-      { Mouth: "Mouth" },
+      { name: "Background" },
+      { name: "Background Props" },
+      { name: "Body" },
+      { name: "Clothing" },
+      { name: "Eyes" },
+      { name: "Face Design" },
+      { name: "Hair" },
+      { name: "Head Accessories" },
+      { name: "Mouth" },
     ],
   },
-
+  
 ];
 
 const shuffleLayerConfigurations = true;
@@ -94,7 +94,7 @@ const background = {
   default: "#000000",
 };
 
-const extraMetadata = {};
+const extraMetadata = {}; // add minting site opt
 
 const rarityDelimiter = "#"; //rarity shiet ig
 
